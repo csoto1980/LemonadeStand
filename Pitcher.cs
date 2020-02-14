@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_3DayStarter
 {
+    
     class Pitcher
+        //Member Variables
     {
+        public int cupsLeftInPitcher;
+
+
+        //Constructor
+        public Pitcher()
+        {
+
+        }
     }
+    
+    //Member Methods
 }

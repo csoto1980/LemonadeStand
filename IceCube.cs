@@ -10,10 +10,13 @@ namespace LemonadeStand_3DayStarter
     {
         // member variables (HAS A)
 
+
         // constructor (SPAWNER)
         public IceCube()
         {
             name = "ice cube";
+            quantity = 0;
+            cost = 0;
         }
 
         // member methods (CAN DO)

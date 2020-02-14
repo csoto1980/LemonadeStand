@@ -8,5 +8,6 @@ namespace LemonadeStand_3DayStarter
 {
     class Weather
     {
+        //weather system condition & temp beginning of each day
     }
 }
