@@ -12,7 +12,7 @@ namespace LemonadeStand_3DayStarter
         public string name;
         public Inventory inventory;
         public Wallet wallet;
-        //public Recipe recipe;
+        public Recipe recipe;
         public Pitcher pitcher;
 
 
@@ -23,7 +23,7 @@ namespace LemonadeStand_3DayStarter
             name = GetPlayerName();
             inventory = new Inventory();
             wallet = new Wallet();
-            //recipe = new Recipe();
+            recipe = new Recipe();
             pitcher = new Pitcher();
         }
 
@@ -33,6 +33,12 @@ namespace LemonadeStand_3DayStarter
             Console.WriteLine("Enter player name: ");
             string playerName = Console.ReadLine();
             return playerName;
+        }
+        public string GetStringInput(string word)
+        {
+            Console.WriteLine($"Enter {word}");
+            string input = Console.ReadLine();
+            return input;
         }
     }
 }

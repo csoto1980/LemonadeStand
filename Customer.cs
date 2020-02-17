@@ -16,14 +16,18 @@ namespace LemonadeStand_3DayStarter
         //Constructor
         public Customer()
         {
-            
+            name = RandomName();
+            List<string> names = new List<string>() { RandomName() };
+
         }
 
         //Methods
-        public void RandomName()
+        public string RandomName()
         {
+            Random r = new Random();
             string[] names = new string[] { "Bill", "Bob", "Jill", "Ted", "Jose", "Christine", "Brett", "Stephanie", "Ava", "Russell" };
-
+            name = names[r.Next(0, names.Length)];
+            return name;
         }
     }
 

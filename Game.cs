@@ -10,20 +10,24 @@ namespace LemonadeStand_3DayStarter
     {
         //Variables 
         public Player player;
-        public List<Day> days;
+        public Day runDay;
         public int currentDay;
+        //public UserInterface userI();
 
         //Constructor
         public Game()
         {
-            player = new Player();
+            //player = new Player();
+
+            //userInterface = new UserInterface();
+
         }
         
         //Methods
         public void DisplayRules()
         {
             Console.WriteLine("**********************************************************************************************************");
-            Console.WriteLine("                             Welcome to Lemonade Stand Game");
+            Console.WriteLine("                             Welcome to the Lemonade Stand Game");
             Console.WriteLine("**********************************************************************************************************");
             Console.WriteLine();
             Console.WriteLine(                                          "INSTRUCTIONS:");
@@ -40,9 +44,12 @@ namespace LemonadeStand_3DayStarter
         {
             
             DisplayRules();
-          
-            Weather weather = new Weather();
-            Console.WriteLine("Today's forcast is " + weather.DailyRandomTemperature() + " " + weather.DailyRandomCondition() + ".");
+            Player player = new Player();
+            Day day = new Day();
+
+ 
+
+           
             Console.ReadLine();
 
         }

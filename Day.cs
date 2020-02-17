@@ -16,9 +16,14 @@ namespace LemonadeStand_3DayStarter
         public Day()
         {
             weather = new Weather();
+            customers = new List<Customer>();
 
         }
         //Methods
+        //if weather sunny - hot
+        //if sunny warm
+        //if sunny cold
+        //
         
     }
 

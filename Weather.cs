@@ -12,7 +12,7 @@ namespace LemonadeStand_3DayStarter
         //weather system condition & temp beginning of each day
         public string condition;
         public int temperature;
-        List<string> weatherConditons;
+        List<string> weatherConditions;
 
 
         //Constructor
@@ -20,7 +20,8 @@ namespace LemonadeStand_3DayStarter
         {
             condition = DailyRandomCondition();
             temperature = DailyRandomTemperature();
-            Console.WriteLine(DailyRandomTemperature() + " " + DailyRandomCondition()); 
+            Console.WriteLine("Today's forecast is: " + DailyRandomTemperature() + " and" + DailyRandomCondition());
+            weatherConditions = new List<string>();
         }
 
         //Methods
@@ -38,10 +39,5 @@ namespace LemonadeStand_3DayStarter
             condition = conditions[r.Next(0, conditions.Length)];
             return condition;
         }
-        //Conditions 
-        //Sunny
-        //Cloudy
-        //Rain
-        //Overcast
     }
 }

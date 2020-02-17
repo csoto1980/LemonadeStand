@@ -10,6 +10,7 @@ namespace LemonadeStand_3DayStarter
     {
         static void Main(string[] args)
         {
+            
             Game game = new Game();
             game.RunGame();
         }
