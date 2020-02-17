@@ -12,17 +12,27 @@ namespace LemonadeStand_3DayStarter
         public string name;
         public Inventory inventory;
         public Wallet wallet;
-        public Recipe recipe;
+        //public Recipe recipe;
         public Pitcher pitcher;
 
 
         // constructor (SPAWNER)
         public Player()
         {
+
+            name = GetPlayerName();
             inventory = new Inventory();
             wallet = new Wallet();
+            //recipe = new Recipe();
+            pitcher = new Pitcher();
         }
 
         // member methods (CAN DO)
+        private string GetPlayerName()
+        {
+            Console.WriteLine("Enter player name: ");
+            string playerName = Console.ReadLine();
+            return playerName;
+        }
     }
 }

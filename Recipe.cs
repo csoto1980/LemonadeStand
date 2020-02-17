@@ -19,7 +19,7 @@ namespace LemonadeStand_3DayStarter
         {
             this.amountOfLemons = amountOfLemons;
             this.amountOfSugarCubes = amountOfSugarCubes;
-            this.amountOfIceCubes = amountOfLemons;
+            this.amountOfIceCubes = amountOfIceCubes;
             this.pricePerCup = pricePerCup;
 
         }
