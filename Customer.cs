@@ -9,15 +9,15 @@ namespace LemonadeStand_3DayStarter
     class Customer
     {
         //Member Variables
-        List<string> names;
-        string name;
+        //List<string> names;
+        public string name;
 
 
         //Constructor
         public Customer()
         {
             name = RandomName();
-            List<string> names = new List<string>() { RandomName() };
+            //List<string> names = new List<string>() { RandomName() };
 
         }
 

@@ -19,7 +19,6 @@ namespace LemonadeStand_3DayStarter
         // constructor (SPAWNER)
         public Player()
         {
-
             name = GetPlayerName();
             inventory = new Inventory();
             wallet = new Wallet();
@@ -28,10 +27,19 @@ namespace LemonadeStand_3DayStarter
         }
 
         // member methods (CAN DO)
-        private string GetPlayerName()
+        public string GetPlayerName()
         {
             Console.WriteLine("Enter player name: ");
             string playerName = Console.ReadLine();
+            if (playerName == "")
+            {
+                Console.WriteLine("Welcome " + playerName);
+            }
+            else
+            {
+                Console.WriteLine("Invalid entry. Please try again entering letters only.");
+                return GetPlayerName();
+            }
             return playerName;
         }
         public string GetStringInput(string word)

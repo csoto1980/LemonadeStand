@@ -10,20 +10,20 @@ namespace LemonadeStand_3DayStarter
     {
         //Member Variables
         public Weather weather;
-        public List<Customer> customers;
+        public Customer customers;
 
         //Constructor
         public Day()
         {
             weather = new Weather();
-            customers = new List<Customer>();
+            customers = new Customer();
 
         }
-        //Methods
-        //if weather sunny - hot
-        //if sunny warm
-        //if sunny cold
-        //
+        public void ListOfDays()
+        {
+            
+        }
+   
         
     }
 

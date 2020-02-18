@@ -23,9 +23,20 @@ namespace LemonadeStand_3DayStarter
 
         public Wallet()
         {
+            string endGame;
             money = 20.00;
+            if (money <= 0)
+            {
+                //gameOver
+            }
+
+            //todo if this is zero END Game
         }
 
+        public void Bankrupt()
+        {
+            //game over if Wall
+        }
         public void PayMoneyForItems(double transactionAmount)
         {
             money -= transactionAmount;

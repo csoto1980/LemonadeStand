@@ -14,8 +14,7 @@ namespace LemonadeStand_3DayStarter
         public Cup()
         {
             name = "cup";
-            quantity = 0;
-            cost = 0;
+
         }
 
         // member methods (CAN DO)
