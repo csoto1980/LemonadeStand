@@ -31,14 +31,17 @@ namespace LemonadeStand_3DayStarter
         {
             Console.WriteLine("Enter player name: ");
             string playerName = Console.ReadLine();
-            if (playerName == "")
+
+            if (playerName == null)
             {
-                Console.WriteLine("Welcome " + playerName);
+                Console.WriteLine("Invalid entry. Please try again.");
+                return GetPlayerName();
+                
             }
             else
             {
-                Console.WriteLine("Invalid entry. Please try again entering letters only.");
-                return GetPlayerName();
+                Console.WriteLine("Welcome " + playerName + "!!");
+
             }
             return playerName;
         }

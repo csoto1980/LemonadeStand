@@ -9,8 +9,8 @@ namespace LemonadeStand_3DayStarter
     class Game
     {
         //Variables 
-        public Player player;
-        public Day day;
+        //public Player player;
+        //public Day day;
         // store class?
         //public Day runDay;
         //public int currentDay;
@@ -22,8 +22,7 @@ namespace LemonadeStand_3DayStarter
             UserInterface.DisplayRules();
             Player player = new Player();
             Day day = new Day();
-            //player = new Player();
-            //day = new Day();
+            //need to incorporate how weather and price of product will effect demand
 
         }
         
