@@ -17,17 +17,14 @@ namespace LemonadeStand_3DayStarter
         {
             weather = new Weather();
             customers = new Customer();
-
         }
-        public void ListOfDays()
+        public void StartOfDay()
         {
-            
+            weather = new Weather();
+            //depending on random weather will depend on how many customer will show up
         }
-   
-        
+
+
     }
-
-
-
 
 }

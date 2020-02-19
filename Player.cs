@@ -29,7 +29,7 @@ namespace LemonadeStand_3DayStarter
         // member methods (CAN DO)
         public string GetPlayerName()
         {
-            Console.WriteLine("Enter player name: ");
+            Console.WriteLine("Enter player name & press 'Enter': ");
             string playerName = Console.ReadLine();
 
             if (playerName == null)
@@ -40,16 +40,12 @@ namespace LemonadeStand_3DayStarter
             }
             else
             {
+                Console.WriteLine("");
                 Console.WriteLine("Welcome " + playerName + "!!");
-
+                Console.WriteLine("");
             }
             return playerName;
         }
-        public string GetStringInput(string word)
-        {
-            Console.WriteLine($"Enter {word}");
-            string input = Console.ReadLine();
-            return input;
-        }
+    
     }
 }

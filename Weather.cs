@@ -12,16 +12,16 @@ namespace LemonadeStand_3DayStarter
         //weather system condition & temp beginning of each day
         public string condition;
         public int temperature;
-        //List<string> weatherConditions;
+        List<string> weatherConditions;
 
 
         //Constructor
         public Weather()
         {
+            weatherConditions = new List<string>();
             condition = DailyRandomCondition();
             temperature = DailyRandomTemperature();
             Console.WriteLine("Today's forecast is: " + DailyRandomTemperature() + " and" + DailyRandomCondition());
-            //weatherConditions = new List<string>();
         }
 
         //Methods

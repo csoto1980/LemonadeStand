@@ -17,18 +17,16 @@ namespace LemonadeStand_3DayStarter
             {
                 Console.WriteLine("How many " + itemsToGet + " would you like to buy?");
                 Console.WriteLine("Please enter a positive integer (or 0 to cancel):");
-
                 userInputIsAnInteger = Int32.TryParse(Console.ReadLine(), out quantityOfItem);
             }
-
             return quantityOfItem;
         }
 
         public static void DisplayRules()
         {
-            Console.WriteLine("**********************************************************************************************************");
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
             Console.WriteLine("                                    Welcome to the Lemonade Stand Game");
-            Console.WriteLine("**********************************************************************************************************");
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
             Console.WriteLine();
             Console.WriteLine("                                              INSTRUCTIONS:");
             Console.WriteLine();
@@ -40,6 +38,8 @@ namespace LemonadeStand_3DayStarter
             Console.WriteLine("At the end of the game, you'll see how much $$ you made. Write it down & play again to beat your score.");
             Console.WriteLine();
             Console.WriteLine("**********************************************************************************************************");
+            Console.WriteLine("**********************************************************************************************************");
         }
+
     }
 }
