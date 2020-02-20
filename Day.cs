@@ -11,17 +11,49 @@ namespace LemonadeStand_3DayStarter
         //Member Variables
         public Weather weather;
         public Customer customers;
+        public Store store;
 
         //Constructor
         public Day()
         {
             weather = new Weather();
             customers = new Customer();
+            store = new Store();
         }
-        public void StartOfDay()
+
+        public void CreateCustomers()
         {
-            weather = new Weather();
-            //depending on random weather will depend on how many customer will show up
+
+        }
+
+        public void StorePricesIncrease()
+        {
+           
+        }
+        public void DisplayDaysWeather()
+        {
+            Console.WriteLine("Today's forecast is: " + weather.DailyRandomTemperature() + " and" + weather.DailyRandomCondition());
+
+        }
+        public void NumberOfCustomersPerDay(string weatherCondition, int weatherTemperature)
+        {
+            if (weatherCondition == " Sunny" && weatherTemperature >= 70)
+            {
+                //20 customers per day
+            }
+            else if (weatherCondition == " Sunny" && weatherTemperature < 70 || weatherCondition == " Rainy" && weatherTemperature >= 70)
+            {
+                //10 customers per day
+            }
+            else if (weatherCondition == " Cloudy" && weatherTemperature >= 70)
+            {
+                //15 customers per day
+            }
+            else if (weatherCondition == " Cloudy" && weatherTemperature < 70 || weatherCondition == " Rainy" && weatherTemperature < 70)
+            {
+                //5 customers per day
+            }
+
         }
 
 

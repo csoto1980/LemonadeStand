@@ -40,6 +40,25 @@ namespace LemonadeStand_3DayStarter
             Console.WriteLine("**********************************************************************************************************");
             Console.WriteLine("**********************************************************************************************************");
         }
+        public static string GetPlayerName()
+        {
+            Console.WriteLine("Enter player name & press 'Enter': ");
+            string playerName = Console.ReadLine();
 
+            if (playerName == null)
+            {
+                Console.WriteLine("Invalid entry. Please try again.");
+                return GetPlayerName();
+
+            }
+            else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Welcome " + playerName + "!!");
+                Console.WriteLine("");
+            }
+            return playerName;
+        }
     }
+
 }

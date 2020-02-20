@@ -9,38 +9,29 @@ namespace LemonadeStand_3DayStarter
     class Game
     {
         //Variables 
-        //public Player player;
-        //public Day day;
-        // store class?
-        //public Day runDay;
-        //public int currentDay;
+        public Player player;
+        List<Day> days;
+        public int currentDay;
+        public Day runDay;
+        
         //public UserInterface userI();
 
         //Constructor
         public Game()
         {
             UserInterface.DisplayRules();
-            Player player = new Player();
+            UserInterface.GetPlayerName();
+            days = new List<Day>();
             Day day = new Day();
-            Recipe recipe = new Recipe();
+            day.DisplayDaysWeather();
+            Player player = new Player();
             Store store = new Store();
+            //Recipe recipe = new Recipe();
             store.SellLemons(player);
-
-            
-            
-            
-            //need to incorporate how weather and price of product will effect demand
-
-
-            //UserInterface.GetNumberOfItems("Lemons");
-            //UserInterface.GetNumberOfItems("SugarCups");
-            //UserInterface.GetNumberOfItems("IceCupes");
-            //UserInterface.GetNumberOfItems("Cups");
 
         }
 
         //Methods
-
         public void RunGame()
         
         {
@@ -48,12 +39,7 @@ namespace LemonadeStand_3DayStarter
             {
                 //play another day
             }
-            //else - display profit? & end Game.
-            
-            //UserInterface.GetNumberOfItems("Lemons");
-            //UserInterface.GetNumberOfItems("SugarCups");
-            //UserInterface.GetNumberOfItems("IceCupes");
-            //UserInterface.GetNumberOfItems("Cups");
+
             Console.ReadLine();       
         }
         

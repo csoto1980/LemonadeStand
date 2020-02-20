@@ -19,33 +19,18 @@ namespace LemonadeStand_3DayStarter
         // constructor (SPAWNER)
         public Player()
         {
-            name = GetPlayerName();
+            //name = GetPlayerName();
             inventory = new Inventory();
             wallet = new Wallet();
-            recipe = new Recipe();
+            //recipe = new Recipe();
             pitcher = new Pitcher();
         }
 
-        // member methods (CAN DO)
-        public string GetPlayerName()
+        public void DisplayCurrentInventory()
         {
-            Console.WriteLine("Enter player name & press 'Enter': ");
-            string playerName = Console.ReadLine();
-
-            if (playerName == null)
-            {
-                Console.WriteLine("Invalid entry. Please try again.");
-                return GetPlayerName();
-                
-            }
-            else
-            {
-                Console.WriteLine("");
-                Console.WriteLine("Welcome " + playerName + "!!");
-                Console.WriteLine("");
-            }
-            return playerName;
+            
         }
-    
     }
+
+
 }

@@ -9,33 +9,27 @@ namespace LemonadeStand_3DayStarter
     public class Weather
     {
         //Variables
-        //weather system condition & temp beginning of each day
         public string condition;
         public int temperature;
         List<string> weatherConditions;
 
-
         //Constructor
         public Weather()
         {
-            weatherConditions = new List<string>();
-            condition = DailyRandomCondition();
-            temperature = DailyRandomTemperature();
-            Console.WriteLine("Today's forecast is: " + DailyRandomTemperature() + " and" + DailyRandomCondition());
-        }
 
+        }
         //Methods
-        
         public int DailyRandomTemperature()
         {
             Random temperature = new Random();
             return temperature.Next(40, 101);
-            
+
         }
         public string DailyRandomCondition()
         {
+
             Random r = new Random();
-            string[] conditions = { " Sunny", " Cloudy", " Rain" };
+            string[] conditions = { " Sunny", " Cloudy", " Rainy" };
             condition = conditions[r.Next(0, conditions.Length)];
             return condition;
         }

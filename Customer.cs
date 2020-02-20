@@ -14,12 +14,12 @@ namespace LemonadeStand_3DayStarter
 
 
         //Constructor
-        public Customer(Random random)
+        public Customer()
         {
             //name = RandomName();
             //List<string> names = new List<string>() { RandomName() };
             Random r = new Random();
-            string[] names = new string[] { "Bill", "Bob", "Jill", "Ted", "Jose", "Christine", "Brett", "Stephanie", "Ava", "Russell" };
+            string[] names = new string[] { "Ava", "Michael", "Bill", "John", "Ted", "Jose", "Christine", "Brett", "Stephanie", "Jose", "Michael" };
             name = names[r.Next(0, names.Length)];
 
         }

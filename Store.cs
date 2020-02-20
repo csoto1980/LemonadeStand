@@ -24,6 +24,10 @@ namespace LemonadeStand_3DayStarter
         }
 
         // member methods (CAN DO)
+        public void StorePricesDependingOnWeather()
+        {
+
+        }
         public void SellLemons(Player player)
         {
             int lemonsToPurchase = UserInterface.GetNumberOfItems("lemons");
